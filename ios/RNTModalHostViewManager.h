@@ -6,7 +6,7 @@
  */
 
 #import <React/RCTInvalidating.h>
-#import <React/RCTViewManager.h>
+#import <React/RCTBridgeModule.h>
 #import <React/RCTConvert.h>
 
 @interface RCTConvert (RNTModalHostView)
@@ -17,7 +17,7 @@
 
 typedef void (^RNTModalViewInteractionBlock)(UIViewController *reactViewController, UIViewController *viewController, BOOL animated, dispatch_block_t completionBlock);
 
-@interface RNTModalHostViewManager : RCTViewManager <RCTInvalidating>
+@interface RNTModalHostViewManager : NSObject <RCTBridgeModule>
 
 /**
  * `presentationBlock` and `dismissalBlock` allow you to control how a Modal interacts with your case,

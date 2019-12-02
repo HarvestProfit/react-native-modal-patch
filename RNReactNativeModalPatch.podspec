@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "author" => "jake@harvestprofit.com" }
   s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/HarvestProfit/react-native-modal-patch.git", :tag => "master" }
-  s.source_files  = "RNReactNativeModalPatch/**/*.{h,m}"
+  s.source_files  = "ios/*.{h,m}"
   s.requires_arc = true
 
 
