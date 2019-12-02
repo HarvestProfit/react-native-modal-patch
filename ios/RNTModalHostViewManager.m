@@ -96,7 +96,7 @@ RCT_EXPORT_MODULE(RNTModal)
   if (modalHostView.onDismiss) {
     modalHostView.onDismiss(nil);
   }
-  
+
   if (_dismissalBlock) {
     _dismissalBlock([modalHostView reactViewController], viewController, animated, nil);
   } else {

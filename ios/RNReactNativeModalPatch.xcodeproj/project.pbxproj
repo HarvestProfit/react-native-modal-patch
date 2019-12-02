@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNReactNativeModalPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNReactNativeModalPatch.m */; };
+		239995E62395CD9F006BE82A /* RNTModalHostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 239995E22395CD9F006BE82A /* RNTModalHostView.m */; };
+		239995E72395CD9F006BE82A /* RNTModalHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239995E32395CD9F006BE82A /* RNTModalHostViewController.m */; };
+		239995E82395CD9F006BE82A /* RNTModalHostViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 239995E42395CD9F006BE82A /* RNTModalHostViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +26,12 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNReactNativeModalPatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNReactNativeModalPatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNReactNativeModalPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNReactNativeModalPatch.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNReactNativeModalPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNReactNativeModalPatch.m; sourceTree = "<group>"; };
+		239995E02395CD9F006BE82A /* RNTModalHostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTModalHostView.h; sourceTree = "<group>"; };
+		239995E12395CD9F006BE82A /* RNTModalHostViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTModalHostViewManager.h; sourceTree = "<group>"; };
+		239995E22395CD9F006BE82A /* RNTModalHostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTModalHostView.m; sourceTree = "<group>"; };
+		239995E32395CD9F006BE82A /* RNTModalHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTModalHostViewController.m; sourceTree = "<group>"; };
+		239995E42395CD9F006BE82A /* RNTModalHostViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTModalHostViewManager.m; sourceTree = "<group>"; };
+		239995E52395CD9F006BE82A /* RNTModalHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTModalHostViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +56,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNReactNativeModalPatch.h */,
-				B3E7B5891CC2AC0600A0062D /* RNReactNativeModalPatch.m */,
+				239995E02395CD9F006BE82A /* RNTModalHostView.h */,
+				239995E22395CD9F006BE82A /* RNTModalHostView.m */,
+				239995E52395CD9F006BE82A /* RNTModalHostViewController.h */,
+				239995E32395CD9F006BE82A /* RNTModalHostViewController.m */,
+				239995E12395CD9F006BE82A /* RNTModalHostViewManager.h */,
+				239995E42395CD9F006BE82A /* RNTModalHostViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +105,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -112,7 +123,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNReactNativeModalPatch.m in Sources */,
+				239995E82395CD9F006BE82A /* RNTModalHostViewManager.m in Sources */,
+				239995E72395CD9F006BE82A /* RNTModalHostViewController.m in Sources */,
+				239995E62395CD9F006BE82A /* RNTModalHostView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +217,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
