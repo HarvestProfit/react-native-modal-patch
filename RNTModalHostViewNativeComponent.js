@@ -1,5 +1,5 @@
-import { NativeModules } from 'react-native';
+import {requireNativeComponent} from 'react-native';
 
-const { RNTModal } = NativeModules;
+var RNTModal = requireNativeComponent('RNTModal');
 
-export default RNTModal;
+module.exports = RNTModal;
