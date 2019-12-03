@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ yarn add https://github.com/HarvestProfit/react-native-modal-patch.git
+`$ yarn add https://github.com/HarvestProfit/react-native-modal-patch.git`
 
 ### Install
 
