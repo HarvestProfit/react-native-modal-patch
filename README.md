@@ -1,27 +1,32 @@
 
-# react-native-react-native-modal-patch
+# react-native-modal-patch
 
 ## Getting started
 
-`$ npm install react-native-react-native-modal-patch --save`
+`$ yarn add https://github.com/HarvestProfit/react-native-modal-patch.git
 
-### Mostly automatic installation
+### Install
 
-`$ react-native link react-native-react-native-modal-patch`
-
-### Manual installation
-
-
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-react-native-modal-patch` and add `RNReactNativeModalPatch.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNReactNativeModalPatch.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+`cd ios && pod install`
 
 ## Usage
+
+This is the same API as the react native modal https://facebook.github.io/react-native/docs/modal#docsNav.
+
 ```javascript
 import Modal from 'react-native-modal-patch';
 
-// Use it like you would a normal react native modal
+//....
+render() {
+  return (
+    <Modal
+      animationType="slide"
+      presentationStyle="pageSheet" // <-- Swipe down/dismiss works now!
+      visible={this.state.modalVisible}
+      onDismiss={() => this.setModalVisible(false)} // <-- This gets called all the time
+    >
+      {/* modal contents */}
+    </Modal>
+  );
+  
 ```
